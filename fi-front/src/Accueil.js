@@ -353,7 +353,7 @@ function Accueil() {
                 href="https://wa.me/22943747378"
                 target="_blank"
                 title="chat privé"
-                class="flex rounded-xl mr-4 space-x-2 bg-blue-700 hover:bg-yellow-500 px-10 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600"
+                class="flex rounded-xl mr-4 space-x-2 bg-yellow-500 hover:bg-blue-500 px-10 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600"
               >
                 Démarrez une discussion{" "}
                 <svg
