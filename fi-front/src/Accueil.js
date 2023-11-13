@@ -1,10 +1,16 @@
 
 
 import './App.css';
+import React from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+
+
 function Accueil() {
 
+
+
   return (
-    <div class="area overflow-x-hidden bg-blue-300">
+    <div class="area overflow-x-hidden bg-blue-500">
       <ul class="circles">
         <li></li>
         <li></li>
@@ -18,7 +24,7 @@ function Accueil() {
         <li></li>
       </ul>
 
-      <header class="text-slate-700 relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 lg:mx-auto lg:flex-row lg:items-center">
+      <header class="text-slate-700 relative  flex text-white max-w-screen-xl flex-col overflow-hidden px-4 py-4 lg:mx-auto lg:flex-row lg:items-center">
         <a
           href="#"
           class="flex items-center whitespace-nowrap text-2xl font-black"
@@ -28,7 +34,12 @@ function Accueil() {
           </span>
           {/* spline */}
         </a>
-        <input type="checkbox" class="peer hidden" id="navbar-open" achecked />
+        <input
+          type="checkbox"
+          class="peer hidden text-white"
+          id="navbar-open"
+          achecked
+        />
         <label
           class="absolute top-5 right-5 cursor-pointer lg:hidden"
           for="navbar-open"
@@ -53,7 +64,7 @@ function Accueil() {
           aria-label="Header Navigation"
           class="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row"
         >
-          <ul class="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
+          <ul class="flex w-full flex-col items-center space-y-8 lg:flex-row lg:justify-center lg:space-y-0">
             <li class="lg:mr-12">
               <a
                 class="rounded-lg text-yellow-500 border hover:border-yellow-500 font-bold border-white p-2  transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
@@ -99,10 +110,10 @@ function Accueil() {
               SMS MARKETING ⇾{" "}
             </a>
             <a
-              href="https://www.wasenderpro.com"
+              href="https://wasenderpro.5sender.com/"
               target="_blank"
               title=""
-              class="whitespace-nowrap rounded-xl bg-white px-5 py-3 font-medium text-blue-500 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-yellow-500"
+              class="whitespace-nowrap rounded-xl bg-white px-5 py-3 font-medium text-blue-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-yellow-500"
             >
               WASENDERPRO ⇾
             </a>
@@ -116,7 +127,7 @@ function Accueil() {
             <span class="bg-blue-300 text-blue-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 256 258"
               >
                 <defs>
@@ -158,7 +169,7 @@ function Accueil() {
             <span class="bg-red-300 text-red-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 24 24"
               >
                 <path
@@ -170,7 +181,7 @@ function Accueil() {
             <span class="bg-green-300 text-green-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 128 128"
               >
                 <path d="M75.916 54.2L122.542 0h-11.05L71.008 47.06L38.672 0H1.376l48.898 71.164L1.376 128h11.05L55.18 78.303L89.328 128h37.296L75.913 54.2ZM60.782 71.79l-4.955-7.086l-39.42-56.386h16.972L65.19 53.824l4.954 7.086l41.353 59.15h-16.97L60.782 71.793Z" />
@@ -179,7 +190,7 @@ function Accueil() {
             <span class="bg-yellow-300 text-yellow-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 256 256"
               >
                 <g fill="none">
@@ -195,7 +206,7 @@ function Accueil() {
             <span class="bg-gray-300 text-yellow-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 24 24"
               >
                 <g
@@ -213,7 +224,7 @@ function Accueil() {
             <span class="bg-indigo-300 text-yellow-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 512 512"
               >
                 <path
@@ -225,7 +236,7 @@ function Accueil() {
             <span class="bg-green-300 text-yellow-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 256 256"
               >
                 <g fill="none">
@@ -278,7 +289,7 @@ function Accueil() {
             <span class="bg-red-300 text-yellow-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 512 116"
               >
                 <path
@@ -298,7 +309,7 @@ function Accueil() {
             <span class="bg-green-300 text-yellow-900 inline-block text-center px-2 py-1 rounded text-md font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 animate-spin"
+                className="h-8 w-8 "
                 viewBox="0 0 12 12"
               >
                 <path
@@ -399,117 +410,209 @@ function Accueil() {
         </div>
 
         <div class="mt-16 mb-16 flex flex-col items-center justify-center divide-y divide-gray-100 sm:flex-row sm:divide-x sm:divide-y-0 md:mt-20">
-          <div class="bg-black border-none">
-            <section class="relative block px-6 py-10 md:py-20 md:px-10  border-t border-b border-neutral-100 bg-neutral-900/30">
-              <div class="relative mx-auto max-w-5xl text-center">
-                <span class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
-                  Explorez le potentiel de nos services
-                </span>
-                <h2 id="services" class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-yellow-500 text-3xl sm:text-4xl">
-                  Prêt pour Booster son Business ?
-                </h2>
-                <p class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
-                  Le marketing digital est devenu un élément clé de la stratégie
-                  marketing des entreprises. Il permet d’atteindre une audience
-                  plus large et plus ciblée que les méthodes traditionnelles de
-                  marketing
+          <section class="relative block px-6 py-10 md:py-20 md:px-10  border-2 rounded-lg border border-neutral-100 bg-neutral">
+            <div class="relative mx-auto max-w-5xl text-center">
+              <span class="text-gray-100 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+                Explorez le potentiel de nos services
+              </span>
+              <h2
+                id="services"
+                class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-yellow-500 text-3xl sm:text-4xl"
+              >
+                Prêt pour Booster son Business ?
+              </h2>
+              <p class="mx-auto my-4 w-full max-w-xl bg-transparent text-white text-center font-medium leading-relaxed tracking-wide text-gray-400">
+                Le marketing digital est devenu un élément clé de la stratégie
+                marketing des entreprises. Il permet d’atteindre une audience
+                plus large et plus ciblée que les méthodes traditionnelles de
+                marketing
+              </p>
+            </div>
+
+            <div class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
+              <div
+                class="rounded-md cursor-pointer py-6 rounded-lg 
+                                transform transition duration-500 
+                                hover:scale-110 border border-yellow-500-800 text-white bg-yellow-500 p-8 text-center shadow"
+              >
+                <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border bg-background-image: linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2) ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-color-swatch"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                    <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                    <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                    <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                  </svg>
+                </div>
+                <h3 class="mt-6 text-gray-100 mx-auto rounded-lg bg-blue-700 font-bold  p-2 text-center">
+                  Service numérique & Pub sponsorisée 🕛
+                </h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
+                  Digitalisez tout le système de vente de vos produits et
+                  optimisez votre présence web
                 </p>
               </div>
 
-              <div class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="rounded-md border border-yellow-500-800 text-white bg-yellow-500 p-8 text-center shadow">
-                  <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border bg-background-image: linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2) ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-color-swatch"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
-                      <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
-                      <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
-                      <line x1="17" y1="17" x2="17" y2="17.01"></line>
-                    </svg>
-                  </div>
-                  <h3 class="mt-6 text-gray-100 mx-auto rounded-lg bg-indigo-500 font-bold  p-2 text-center">
-                    Service numérique & Pub sponsorisée 🕛
-                  </h3>
-                  <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
-                    Digitalisez tout le système de vente de vos produits
-                     et optimisez votre présence web
-                  </p>
+              <div
+                class="rounded-md cursor-pointer py-6 rounded-lg 
+                                transform transition duration-500 
+                                hover:scale-110 border border-white text-hite bg-yellow-500 p-8 text-center shadow"
+              >
+                <div class="button-text text-white mx-auto flex h-12 w-12 items-center justify-center rounded-md border bg-background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240) ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bolt"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
+                  </svg>
                 </div>
-
-                <div class="rounded-md border border-white text-hite bg-yellow-500 p-8 text-center shadow">
-                  <div class="button-text text-white mx-auto flex h-12 w-12 items-center justify-center rounded-md border bg-background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240) ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-bolt"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
-                    </svg>
-                  </div>
-                  <h3 class="mt-6 text-gray-100 mx-auto rounded-lg bg-indigo-500 font-bold w-48 p-2 text-center">
-                    Messagerie SMS 🕒
-                  </h3>
-                  <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
-                    Prospectez votre marché local et internationnal avec
-                    5sender.com
-                  </p>
-                </div>
-
-                <div class="rounded-md border border-white bg-yellow-500 p-8 text-center shadow">
-                  <div class="button-text mx-auto text-white flex h-12 w-12 items-center justify-center rounded-md border bg-linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-tools"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
-                      <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>
-                      <polyline points="12 8 7 3 3 7 8 12"></polyline>
-                      <line x1="7" y1="8" x2="5.5" y2="9.5"></line>
-                      <polyline points="16 12 21 17 17 21 12 16"></polyline>
-                      <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
-                    </svg>
-                  </div>
-                  <h3 class="mt-6 text-gray-100 rounded-lg bg-indigo-500 font-bold w-48 p-2 mx-auto text-center">
-                    WhatSapp Business 🕕
-                  </h3>
-                  <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
-                    Explorez un service de messagerie Business avec
-                    wasenderpro.com
-                  </p>
-                </div>
+                <h3 class="mt-6 text-gray-100 mx-auto rounded-lg bg-blue-700 font-bold w-48 p-2 text-center">
+                  Messagerie SMS 🕒
+                </h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
+                  Prospectez votre marché local et internationnal avec
+                  5sender.com
+                </p>
               </div>
-              <div class="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b bg-linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);"></div>
-              <div class="absolute bottom-0 right-0 z-0 h-1/3 w-full bg-background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)"></div>
-            </section>
-          </div>
+
+              <div
+                class="rounded-md cursor-pointer py-6 rounded-lg 
+                                transform transition duration-500 
+                                hover:scale-110 border border-white bg-yellow-500 p-8 text-center shadow"
+              >
+                <div class="button-text mx-auto text-white flex h-12 w-12 items-center justify-center rounded-md border bg-linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-tools"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+                    <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>
+                    <polyline points="12 8 7 3 3 7 8 12"></polyline>
+                    <line x1="7" y1="8" x2="5.5" y2="9.5"></line>
+                    <polyline points="16 12 21 17 17 21 12 16"></polyline>
+                    <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
+                  </svg>
+                </div>
+                <h3 class="mt-6 text-gray-100 rounded-lg bg-blue-700 font-bold w-48 p-2 mx-auto text-center">
+                  WhatSapp Business 🕕
+                </h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
+                  Explorez un service de messagerie Business avec wasenderpro
+                </p>
+              </div>
+              <div
+                class="rounded-md cursor-pointer py-6 rounded-lg 
+                                transform transition duration-500 
+                                hover:scale-110 border border-white bg-yellow-500 p-8 text-center shadow"
+              >
+                <div class="button-text mx-auto text-white flex h-12 w-12 items-center justify-center rounded-md border bg-linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="-0.5 -0.5 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m21.289.98l.59.59c.813.814.69 2.257-.277 3.223L9.435 16.96l-3.942 1.442c-.495.182-.977-.054-1.075-.525a.928.928 0 0 1 .045-.51l1.47-3.976L18.066 1.257c.967-.966 2.41-1.09 3.223-.276zM8.904 2.19a1 1 0 1 1 0 2h-4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4a1 1 0 0 1 2 0v4a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4v-12a4 4 0 0 1 4-4h4z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="mt-6 text-gray-100 rounded-lg bg-blue-700 font-bold w-48 p-2 mx-auto text-center">
+                  Rédaction web🕕
+                </h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
+                  Explorez un service de marketing de contenu pour vos produits
+                  et services
+                </p>
+              </div>
+              <div
+                class="rounded-md cursor-pointer py-6 rounded-lg 
+                                transform transition duration-500 
+                                hover:scale-110 border border-white bg-yellow-500 p-8 text-center shadow"
+              >
+                <div class="button-text mx-auto text-white flex h-12 w-12 items-center justify-center rounded-md border bg-linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                  >
+                    <g fill="currentColor">
+                      <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                      <path d="M8 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2z" />
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="mt-6 text-gray-100 rounded-lg bg-blue-700 font-bold w-48 p-2 mx-auto text-center">
+                  Numéro virtuel 🕕
+                </h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
+                  Explorez un service de messagerie avec des numéros virtuels
+                  connectés à whatsApp
+                </p>
+              </div>
+              <div
+                class="rounded-md border cursor-pointer py-6 rounded-lg 
+                                transform transition duration-500 
+                                hover:scale-110 border-white bg-yellow-500 p-8 text-center shadow"
+              >
+                <div class="button-text mx-auto text-white flex h-12 w-12 items-center justify-center rounded-md border bg-linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                  >
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M7.933.767a.75.75 0 0 0-1.5 0v.754a.75.75 0 0 0 1.5 0V.767ZM6.595 2.928a.75.75 0 0 1 1.024.275l3.858 6.681a.75.75 0 0 1-1.299.75l-.055-.096l-3.092.718a2.171 2.171 0 0 1-3.97 1.664l-.002-.003l-.376-.651l-1.454.337a.5.5 0 0 1-.546-.237l-.609-1.055a.5.5 0 0 1 .068-.591l6.235-6.67l-.057-.097a.75.75 0 0 1 .275-1.025ZM4.21 11.911l1.357-.315a.671.671 0 0 1-1.21.57l-.147-.255Zm9.78-5.088a.75.75 0 0 1-.75.75h-.754a.75.75 0 0 1 0-1.5h.753a.75.75 0 0 1 .75.75Zm-12.108.75a.75.75 0 1 0 0-1.5h-.754a.75.75 0 1 0 0 1.5h.754Zm2.182-3.868a.75.75 0 0 1-1.06 0l-.634-.634a.75.75 0 1 1 1.06-1.06l.635.633a.75.75 0 0 1 0 1.061Zm7.932-.634a.75.75 0 0 0-1.06-1.06l-.642.64a.75.75 0 1 0 1.061 1.061l.641-.64Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <h3 class="mt-6 text-gray-100 rounded-lg bg-blue-700 font-bold w-48 p-2 mx-auto text-center">
+                  Campagne Mailing 🕕
+                </h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-100">
+                  Explorez un service de campagne mailing pour vos annonces,
+                  évènements ....
+                </p>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b bg-linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);"></div>
+            <div class="absolute bottom-0 right-0 z-0 h-1/3 w-full bg-background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)"></div>
+          </section>
         </div>
       </div>
 
@@ -529,7 +632,7 @@ function Accueil() {
               </p>
               <div class="flex flex-row-reverse flex-wrap justify-center gap-4 md:gap-6 md:justify-end">
                 <a
-                  href="https://wasenderpro.com"
+                  href="https://wasenderpro.5sender.com/"
                   target="_blank"
                   title="WhatsApp Business"
                   class="w-full py-3 px-6 text-center rounded-xl transition bg-gray-700 shadow-xl hover:bg-yellow-500 active:bg-gray-700 focus:bg-gray-600 sm:w-max"
@@ -720,7 +823,7 @@ function Accueil() {
           <p class="mt-4 text-sm leading-7 text-gray-100 font-regular">
             F.A.Qs
           </p>
-          <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+          <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-yellow-500">
             Questions fréquemment
             <span class="text-white ml-4">posées</span>
           </h3>
@@ -822,7 +925,7 @@ function Accueil() {
               </span>
               qui est une plateforme de campagne SMS et
               <span class="text-yellow-500 mx-1 font-extrabold text-2xl relative inline-block stroke-current">
-                WASENDERPRO.COM
+                WASENDERPRO
                 <svg
                   class="absolute -bottom-0.5 w-full max-h-1.5"
                   viewBox="0 0 55 5"
@@ -926,7 +1029,7 @@ function Accueil() {
             </svg>
           </a>
           <a
-            href="https://chat.whatsapp.com/BoIv5CC81ypJ3YMzLiCGtA"
+            href="hhttps://wa.me/22943747378"
             target="_blank"
             class="ml-4 text-gray-100"
           >
@@ -942,6 +1045,24 @@ function Accueil() {
             </svg>
           </a>
         </span>
+      </div>
+      <div className="floating-whatsapp">
+        <FloatingWhatsApp
+          phoneNumber="22943747378"
+          accountName="Claudia"
+          avatar=".././woman.jpeg"
+          statusMessage="En ligne"
+          chatMessage="Bonjour je suis Claudia 👋 !  Je suis là pour vous aider. Tapez votre message et démarrons la discussion en privé ! "
+          placeholder="Tapez votre message ici.."
+          allowEsc
+          allowClickAway
+          notification
+          notificationSoundSrc=".././whatsapp_notification.mp3"
+          notificationSound={true}
+          notificationDelay={5}
+          messageDelay={2}
+          true
+        />
       </div>
     </div>
   );
